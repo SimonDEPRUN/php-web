@@ -14,7 +14,7 @@
         <form class="d-flex flex-column" action="utilisateur.php" method="get">
             <div class="w-25 d-flex flex-column">
                 <label for="name">Nom</label>
-                <input class="w-100" name="name" id="name" type="text" autocomplete="off">
+                <input class="w-100" name="name" id="name" type="text" autofocus>
             </div>
             <div class="w-25 d-flex flex-column">
                 <label for="mdp">Mot de passe</label>
@@ -26,11 +26,11 @@
             </div>
             <div class="w-25 d-flex flex-column">
                 <label for="email">Adresse E-mail</label>
-                <input class="w-100" name="email" id="email" type="email" autocomplete="off">
+                <input class="w-100" name="email" id="email" type="email">
             </div>
             <div class="w-25 d-flex flex-column">
                 <label for="description">Pourquoi ?</label>
-                <textarea class="w-100" name="desciption" id="description" cols="50" rows="5"></textarea>
+                <textarea class="w-100" name="description" id="description" cols="50" rows="5"></textarea>
             </div>
             <div class="w-25 d-flex flex-column">
                 <label for="ville">Ville</label>
@@ -44,18 +44,18 @@
             <div class="w-25 d-flex flex-column">
                 <p>Genre</p>
                 <label for="male">Homme</label>
-                <input type="radio" id="male" name="genre">
+                <input type="radio" id="male" name="genre" value="Homme">
                 <label for="female">Femme</label>
-                <input type="radio" id="female" name="genre">
+                <input type="radio" id="female" name="genre" value="Femme">
+                <label for="autre">Autre</label>
+                <input type="radio" id="other" name="genre" value="Autre" checked>
             </div>
             <div>
-                <input id="rgpd" name="rgpd" type="checkbox">
+                <input id="rgpd" name="rgpd" type="checkbox" value="Je reconais et prend conscience de me droit de rétractation bla bla bla">
                 <label class="fs-6" for="rgpd">Je reconais et prend conscience de me droit de rétractation bla bla bla</label>
             </div>
             <div>
-                <button>
-                    s'inscrire
-                </button>
+                <button>s'inscrire</button>
             </div>
         </form>
     </main>
