@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="/style.css">
     <title>Home page</title>
 </head>
 
 <body>
-    <main class="d-flex">
+    <main>
         <h1 class="text-primary">Page d'accueil</h1>
         <p>Bienvenue dans notre application <strong>Web php</strong></p>
+        <a href="utilisateur.php?name=Mitroglou&ville=Marseille&age=55">
+            Connaître un peu plus sur la légende
+        </a>
     </main>
 
 

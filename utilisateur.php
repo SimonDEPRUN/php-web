@@ -1,19 +1,25 @@
 <?php
-$surname = $_GET['name'];
-$age = $_GET['age'];
-$mail = $_GET['email'];
-$description = $_GET['description'];
-$ville = $_GET['ville'];
-if ($_GET['genre'] == 'Homme') {
+$surname = $_REQUEST['name'];
+$age = $_REQUEST['age'];
+if ($_REQUEST['email'] != "") {
+    $mail = $_REQUEST['email'];
+};
+if ($_REQUEST['description'] != "") {
+    $description = "Vous nous avez dit : " . $_request['description'];
+} else {
+    $description = "";
+};
+$ville = $_REQUEST['ville'];
+if ($_REQUEST['genre'] == 'Homme') {
     $genre = 'Sexe : Male';
-} elseif ($_GET['genre'] == 'Femme') {
+} elseif ($_REQUEST['genre'] == 'Femme') {
     $genre = 'Sexe : Femelle';
 } else {
     $genre = 'Sexe : Apache Hélicoptere';
 };
-if ($_GET['genre'] == 'Homme') {
+if (isset($_REQUEST['genre']) and $_REQUEST['genre'] == 'Homme') {
     $civilite = 'M';
-} elseif ($_GET['genre'] == 'Femme') {
+} elseif (isset($_REQUEST['genre']) and $_REQUEST['genre'] == 'Femme') {
     $civilite = 'Mr';
 } else {
     $civilite = 'MMr';
@@ -35,7 +41,7 @@ if ($_GET['genre'] == 'Homme') {
         <h1>Gestion d'utilisateur</h1>
         <p>Bonjour
             <?php
-            echo "$civilite.$surname, $age ans, $genre, domicilié à $ville. Vous nous avez dit : $description"
+            echo "$civilite.$surname, $age ans, $genre, domicilié à $ville.  $description"
             ?>
         </p>
     </main>
