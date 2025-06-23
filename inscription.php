@@ -48,9 +48,9 @@
                 <label for="female">Femme</label>
                 <input type="radio" id="female" name="genre">
             </div>
-            <div class="">
+            <div>
                 <input id="rgpd" name="rgpd" type="checkbox">
-                <label class="font-2" for="rgpd">Je reconais et prend conscience de me droit de rétractation bla bla bla</label>
+                <label class="fs-6" for="rgpd">Je reconais et prend conscience de me droit de rétractation bla bla bla</label>
             </div>
             <div>
                 <button>
