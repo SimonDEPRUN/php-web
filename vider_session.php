@@ -16,6 +16,7 @@ session_destroy();
 
 <body>
     <h1>Votre session est désormais vide</h1>
+    <a href="checkCookies.php">retour aux resulats</a>
 </body>
 
 </html>

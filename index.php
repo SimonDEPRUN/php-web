@@ -15,6 +15,8 @@
         <a href="utilisateur.php?name=Mitroglou&ville=Marseille&age=55">
             Connaître un peu plus sur la légende
         </a>
+        <br>
+        <a href="inscription.php">Venez vous inscrire</a>
     </main>
 
 

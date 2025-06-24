@@ -2,6 +2,16 @@
 // démarrer la session
 session_start();
 
+
+if (!str_contains($_SERVER['HTTP_REFERER'], 'index.php') and !str_contains($_SERVER['HTTP_REFERER'], 'inscription.php')) {
+    header("location: index.php"); //redirection
+    exit(); // ne pas lire le reste du code
+};
+// var_dump($_SERVER);
+// REQUEST_METHOD' => string 'GET' (length=3)
+// 'HTTP_REFERER' => string 'http://localhost/php-web/' (length=25)
+
+
 $surname = $_REQUEST['name'];
 $age = $_REQUEST['age'];
 if ($_REQUEST['email'] != "") {
