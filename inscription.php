@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php include "./dependencies.php" ?>
+    <?php require "./_dependencies.php" ?>
     <title>Inscription</title>
 </head>
 
