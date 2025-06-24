@@ -24,10 +24,13 @@ if (isset($_SESSION['description'])) {
     <main>
         <h1>Cookies</h1>
         <p>Nom : <?php echo $nom ?></p>
-        <p>Description : <?= $nom ?></p>
-        <h2>Sessions</h2>
-        <p>Nom : <?php echo $description ?></p>
         <p>Description : <?= $description ?></p>
+        <h2>Sessions</h2>
+        <p>Nom : <?php echo $nom ?></p>
+        <p>Description : <?= $description ?></p>
+
+        <a href="vider_session.php">vider la session</a>
+
     </main>
 </body>
 
