@@ -44,7 +44,7 @@ if (isset($_SESSION['description'])) {
         <p>Nom : <?php echo $nom_s ?></p>
         <p>Description : <?= $description_s ?></p>
 
-        <a href="#">vider la session</a>
+        <a href="">vider la session</a>
         <br>
         <a href="utilisateur.php">retour</a>
     </main>
