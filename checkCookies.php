@@ -1,3 +1,16 @@
+<?php
+session_start();
+$nom = "";
+$description = "";
+
+if (isset($_COOKIE['nom'])) {
+    $nom = $_COOKIE['nom'];
+}
+if (isset($_SESSION['description'])) {
+    $description = $_SESSION['description'];
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,8 +23,11 @@
 <body>
     <main>
         <h1>Cookies</h1>
-        <p>Nom : <?php echo $_COOKIE['nom'] ?></p>
-        <p>Description : <?= $_COOKIE['description'] ?></p>
+        <p>Nom : <?php echo $nom ?></p>
+        <p>Description : <?= $nom ?></p>
+        <h2>Sessions</h2>
+        <p>Nom : <?php echo $description ?></p>
+        <p>Description : <?= $description ?></p>
     </main>
 </body>
 

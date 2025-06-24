@@ -43,7 +43,7 @@
                 </select>
             </div>
             <div class="mb-3 row w-25 d-flex flex-column">
-                <p>Genre</p>
+                <p>Genre :</p>
                 <div>
                     <label class="col-sm-2 col-form-label" for="male">Homme</label>
                     <input type="radio" id="male" name="genre" value="Homme">

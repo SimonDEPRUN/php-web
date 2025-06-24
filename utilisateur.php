@@ -1,6 +1,6 @@
 <?php
 // démarrer la session
-// session_start();
+session_start();
 
 $surname = $_REQUEST['name'];
 $age = $_REQUEST['age'];
@@ -28,8 +28,13 @@ if (isset($_REQUEST['genre']) and $_REQUEST['genre'] == 'Homme') {
     $civilite = 'MMr';
 };
 
+// on ajoute les cookies
 setcookie("nom", $surname);
 setcookie("description", $description);
+
+// ajouter les données de session
+$_SESSION['nom'] = $surname;
+$_SESSION['description'] = $description;
 
 
 
@@ -52,6 +57,7 @@ setcookie("description", $description);
             <?php
             echo "$civilite.$surname, $age ans, $genre, domicilié à $ville. $description"
             ?>
+            <a href="checkCookies.php">Venez check vos cookies et les données de session</a>
         </p>
     </main>
 </body>
